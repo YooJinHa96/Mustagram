@@ -15,6 +15,8 @@ namespace Mustagram
         public Form1()
         {
             InitializeComponent();
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -27,10 +29,13 @@ namespace Mustagram
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
-            textBox1.Text = "Dsdsa";
+
         }
+
+       
+
+       
     }
 }
