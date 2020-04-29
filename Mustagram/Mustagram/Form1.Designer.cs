@@ -28,76 +28,232 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.btnLogin = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.passwordbox = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.Idbox = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Mustagram.Properties.Resources.KakaoTalk_20200424_143113477;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 67);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 179);
+            this.pictureBox1.Size = new System.Drawing.Size(195, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
             // 
-            // contextMenuStrip1
+            // label1
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(463, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // label3
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox2.Location = new System.Drawing.Point(43, 377);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(471, 43);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.WordWrap = false;
+            this.label3.BackColor = System.Drawing.Color.Gray;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Location = new System.Drawing.Point(23, 583);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(170, 2);
+            this.label3.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(214, 574);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 19);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "또는";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Gray;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(269, 584);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(182, 2);
+            this.label5.TabIndex = 13;
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1,
+            this.btnLogin,
+            this.passwordbox,
+            this.Idbox});
+            this.shapeContainer1.Size = new System.Drawing.Size(491, 691);
+            this.shapeContainer1.TabIndex = 15;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 0;
+            this.lineShape1.X2 = 491;
+            this.lineShape1.Y1 = 642;
+            this.lineShape1.Y2 = 642;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(43, 470);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(203)))), ((int)(((byte)(247)))));
+            this.btnLogin.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(203)))), ((int)(((byte)(247)))));
+            this.btnLogin.CornerRadius = 15;
+            this.btnLogin.FillColor = System.Drawing.Color.LightGray;
+            this.btnLogin.Location = new System.Drawing.Point(23, 471);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(471, 41);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "로그인";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Size = new System.Drawing.Size(432, 53);
             // 
-            // textBox1
+            // passwordbox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.Location = new System.Drawing.Point(43, 305);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(471, 43);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "아이디 입력 : ";
-            this.textBox1.WordWrap = false;
+            this.passwordbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(249)))));
+            this.passwordbox.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.passwordbox.BorderColor = System.Drawing.Color.LightGray;
+            this.passwordbox.CornerRadius = 15;
+            this.passwordbox.FillColor = System.Drawing.Color.LightGray;
+            this.passwordbox.Location = new System.Drawing.Point(26, 370);
+            this.passwordbox.Name = "passwordbox";
+            this.passwordbox.SelectionColor = System.Drawing.Color.White;
+            this.passwordbox.Size = new System.Drawing.Size(432, 53);
+            this.passwordbox.Enter += new System.EventHandler(this.passwordbox_Enter);
+            this.passwordbox.Leave += new System.EventHandler(this.passwordbox_Leave);
+            // 
+            // Idbox
+            // 
+            this.Idbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(249)))));
+            this.Idbox.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.Idbox.BorderColor = System.Drawing.Color.LightGray;
+            this.Idbox.CornerRadius = 15;
+            this.Idbox.FillColor = System.Drawing.Color.LightGray;
+            this.Idbox.Location = new System.Drawing.Point(26, 294);
+            this.Idbox.Name = "Idbox";
+            this.Idbox.SelectionColor = System.Drawing.Color.White;
+            this.Idbox.Size = new System.Drawing.Size(432, 53);
+            this.Idbox.Click += new System.EventHandler(this.Idbox_Click);
+            this.Idbox.Enter += new System.EventHandler(this.Idbox_Enter);
+            this.Idbox.Leave += new System.EventHandler(this.Idbox_Leave);
+            // 
+            // txtId
+            // 
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(249)))));
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Comic Sans MS", 11F);
+            this.txtId.ForeColor = System.Drawing.Color.Gray;
+            this.txtId.HideSelection = false;
+            this.txtId.Location = new System.Drawing.Point(47, 309);
+            this.txtId.Name = "txtId";
+            this.txtId.ShortcutsEnabled = false;
+            this.txtId.Size = new System.Drawing.Size(387, 21);
+            this.txtId.TabIndex = 16;
+            this.txtId.Text = "아이디 입력 :";
+            this.txtId.Enter += new System.EventHandler(this.Idbox_Enter);
+            this.txtId.Leave += new System.EventHandler(this.Idbox_Leave);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(250)))), ((int)(((byte)(249)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Enabled = false;
+            this.txtPassword.Font = new System.Drawing.Font("Comic Sans MS", 11F);
+            this.txtPassword.ForeColor = System.Drawing.Color.Gray;
+            this.txtPassword.Location = new System.Drawing.Point(47, 385);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.ShortcutsEnabled = false;
+            this.txtPassword.Size = new System.Drawing.Size(387, 21);
+            this.txtPassword.TabIndex = 17;
+            this.txtPassword.Text = "비밀번호";
+            this.txtPassword.Enter += new System.EventHandler(this.passwordbox_Enter);
+            this.txtPassword.Leave += new System.EventHandler(this.passwordbox_Leave);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(203)))), ((int)(((byte)(247)))));
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Underline);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(207, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "로그인";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(145, 661);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 17);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "계정이 없으신가요?";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Underline);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(179)))), ((int)(((byte)(244)))));
+            this.label7.Location = new System.Drawing.Point(258, 661);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 17);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "가입하기";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(560, 684);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(491, 691);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -109,11 +265,20 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape Idbox;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape passwordbox;
+        private System.Windows.Forms.TextBox txtPassword;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape btnLogin;
+        private System.Windows.Forms.Label label2;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
