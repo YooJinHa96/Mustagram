@@ -39,6 +39,9 @@
     <Reference Include="FlatButton">
       <HintPath>..\..\..\..\..\Desktop\개인공부\JControls (1)\FlatButton.dll</HintPath>
     </Reference>
+    <Reference Include="JDragControl">
+      <HintPath>..\..\..\..\..\Desktop\개인공부\JControls (1)\JDragControl.dll</HintPath>
+    </Reference>
     <Reference Include="JGradient Panel">
       <HintPath>..\..\..\..\..\Desktop\개인공부\JControls (1)\JGradient Panel.dll</HintPath>
     </Reference>

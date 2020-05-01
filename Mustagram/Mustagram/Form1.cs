@@ -15,27 +15,28 @@ using System.Windows.Forms;
 
 namespace Mustagram
 {
-    
+
     public partial class Form1 : Form
     {
-       
+
+        Form2 form2 = new Form2();
 
         public Form1()
         {
             InitializeComponent();
             // this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, this.Width, this.Height, 15, 15)); //play with these values till you are happy
-
             pictureBox1.Focus();
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
+
         }
 
-        
-        
+
+
         private void label1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -54,7 +55,7 @@ namespace Mustagram
 
         private void Idbox_Click(object sender, EventArgs e)
         {
-            Idbox_Enter(sender,e);
+            Idbox_Enter(sender, e);
         }
 
         private void Idbox_Leave(object sender, EventArgs e)
@@ -87,11 +88,47 @@ namespace Mustagram
             }
         }
 
-   
+        private void label7_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            if (form2.IsDisposed) // 컨트롤이 죽었으면
+            {
+                form2 = new Form2(); // 다시 인스턴스생성하고 열어줍니다
+                form2.Show();
+            }
+            else
+            {
+                form2.Show();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            form2.Left += 10;
+            if (form2.Left >= 1000)
+            {
+                timer1.Stop();
+                this.TopMost = false;
+                form2.TopMost = true;
+                timer2.Start();
+            }
+            timer1.Interval = 10;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            form2.Left -= 10;
+            if (form2.Left <= this.Left)
+            {
+                timer2.Stop();
+            }
+            timer2.Interval = 10;
+        }
+
+        
     }
-
-
 }
+
 
 
 

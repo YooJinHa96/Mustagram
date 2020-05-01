@@ -12,6 +12,7 @@ namespace Mustagram
 {
     public partial class Form2 : Form
     {
+        //Form1 form1 =new Form1();
         public Form2()
         {
             InitializeComponent();
@@ -50,6 +51,18 @@ namespace Mustagram
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+        
+            Close();
+          
         }
     }
 }
