@@ -43,7 +43,7 @@ namespace Mustagram
 
         private void Idbox_Enter(object sender, EventArgs e)
         {
-            if (txtId.Text == "아이디 입력 :")
+            if (txtId.Text == "아이디")
             {
                 txtId.Enabled = true;
                 txtId.Focus();
@@ -61,7 +61,7 @@ namespace Mustagram
         {
             if (txtId.Text == string.Empty)
             {
-                txtId.Text = "아이디 입력 :";
+                txtId.Text = "아이디";
                 txtId.ForeColor = Color.Gray;
             }
         }

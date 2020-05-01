@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.c = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnLogin = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.passwordbox = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.Idbox = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
@@ -43,20 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Mustagram.Properties.Resources.KakaoTalk_20200424_143113477;
-            this.pictureBox1.Location = new System.Drawing.Point(138, 67);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 143);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -107,7 +95,7 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1,
+            this.c,
             this.btnLogin,
             this.passwordbox,
             this.Idbox});
@@ -115,14 +103,14 @@
             this.shapeContainer1.TabIndex = 15;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
+            // c
             // 
-            this.lineShape1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 0;
-            this.lineShape1.X2 = 491;
-            this.lineShape1.Y1 = 642;
-            this.lineShape1.Y2 = 642;
+            this.c.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.c.Name = "c";
+            this.c.X1 = 0;
+            this.c.X2 = 491;
+            this.c.Y1 = 642;
+            this.c.Y2 = 642;
             // 
             // btnLogin
             // 
@@ -177,7 +165,7 @@
             this.txtId.ShortcutsEnabled = false;
             this.txtId.Size = new System.Drawing.Size(387, 21);
             this.txtId.TabIndex = 16;
-            this.txtId.Text = "아이디 입력 :";
+            this.txtId.Text = "아이디";
             this.txtId.Enter += new System.EventHandler(this.Idbox_Enter);
             this.txtId.Leave += new System.EventHandler(this.Idbox_Leave);
             // 
@@ -231,6 +219,18 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "가입하기";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Mustagram.Properties.Resources.KakaoTalk_20200424_143113477;
+            this.pictureBox1.Location = new System.Drawing.Point(138, 67);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(195, 143);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -275,7 +275,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape btnLogin;
         private System.Windows.Forms.Label label2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape c;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
