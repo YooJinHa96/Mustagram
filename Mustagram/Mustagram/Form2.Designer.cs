@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.nameBox = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.btnLogin = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
@@ -57,7 +56,6 @@
             this.nameBox.Name = "nameBox";
             this.nameBox.SelectionColor = System.Drawing.Color.White;
             this.nameBox.Size = new System.Drawing.Size(432, 53);
-            this.nameBox.Click += new System.EventHandler(this.Idbox_Click);
             this.nameBox.Enter += new System.EventHandler(this.Idbox_Enter);
             this.nameBox.Leave += new System.EventHandler(this.Idbox_Leave);
             // 
@@ -105,9 +103,7 @@
             this.rectangleShape1.FillColor = System.Drawing.Color.LightGray;
             this.rectangleShape1.Location = new System.Drawing.Point(24, 447);
             this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.SelectionColor = System.Drawing.Color.White;
             this.rectangleShape1.Size = new System.Drawing.Size(432, 53);
-            this.rectangleShape1.Click += new System.EventHandler(this.Idbox_Click);
             this.rectangleShape1.Enter += new System.EventHandler(this.Idbox_Enter);
             this.rectangleShape1.Leave += new System.EventHandler(this.Idbox_Leave);
             // 
@@ -220,7 +216,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Mustagram.Properties.Resources.MustaIcon;
             this.pictureBox1.Location = new System.Drawing.Point(148, 54);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(195, 162);

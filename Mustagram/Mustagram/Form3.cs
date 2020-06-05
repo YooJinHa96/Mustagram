@@ -17,15 +17,16 @@ namespace Mustagram
         public Form3()
         {
             InitializeComponent();
+          
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            listView1.View = View.Details;
+           // listView1.View = View.Details;
 
-            listView1.Columns.Add("Spacecraft", 300); ;
-            listView1.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
-            populate();
+           // listView1.Columns.Add("Spacecraft", 300); ;
+            //listView1.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
+          //  populate();
 
         }
         private void populate()
@@ -50,12 +51,10 @@ namespace Mustagram
             }
 
             //BIND IMGS TO LISTVIEW
-            listView1.SmallImageList = imgs;
-            listView1.Items.Add("jusu", 0);
-            listView1.Items.Add("jusu2", 1);
+            //listView1.SmallImageList = imgs;
+            //listView1.Items.Add("jusu", 0);
+            //listView1.Items.Add("jusu2", 1);
 
         }
-
-      
     }
 }
