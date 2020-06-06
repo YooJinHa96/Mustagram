@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Log_list));
-            this.lvw_profile1 = new Mustagram.CiclePicture();
+            this.lvw_profile1 = new Mustagram2.CiclePicture();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_follow = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -111,7 +111,7 @@
 
         #endregion
 
-        private Mustagram.CiclePicture lvw_profile1;
+        private Mustagram2.CiclePicture lvw_profile1;
         private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape btn_follow;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;

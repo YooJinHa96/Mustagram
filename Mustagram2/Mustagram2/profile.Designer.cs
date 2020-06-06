@@ -57,8 +57,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.ciclePicture1 = new Mustagram.CiclePicture();
-            this.lvw_profile1 = new Mustagram.CiclePicture();
+            this.ciclePicture1 = new Mustagram2.CiclePicture();
+            this.lvw_profile1 = new Mustagram2.CiclePicture();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -430,13 +430,13 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label pro_follower;
         private System.Windows.Forms.Label pro_gal;
-        private Mustagram.CiclePicture lvw_profile1;
+        private Mustagram2.CiclePicture lvw_profile1;
         private System.Windows.Forms.Label pro_Name;
         private System.Windows.Forms.Label pro_following;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Mustagram.CiclePicture ciclePicture1;
+        private Mustagram2.CiclePicture ciclePicture1;
         private System.Windows.Forms.Label label4;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape pro_fix;

@@ -62,8 +62,8 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.c = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lvw_time = new System.Windows.Forms.Label();
-            this.lvw_profile2 = new Mustagram.CiclePicture();
-            this.lvw_profile1 = new Mustagram.CiclePicture();
+            this.lvw_profile2 = new Mustagram2.CiclePicture();
+            this.lvw_profile1 = new Mustagram2.CiclePicture();
             this.panel8.SuspendLayout();
             this.lvw_comment_display.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -488,13 +488,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lvw_name;
-        private Mustagram.CiclePicture lvw_profile1;
+        private Mustagram2.CiclePicture lvw_profile1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape c;
         private System.Windows.Forms.Label lvw_time;
         private System.Windows.Forms.Panel lvw_comment_display;
         private System.Windows.Forms.Label comentlabel;
-        private Mustagram.CiclePicture lvw_profile2;
+        private Mustagram2.CiclePicture lvw_profile2;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer5;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape6;
         private System.Windows.Forms.Panel panel6;
